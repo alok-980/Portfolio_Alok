@@ -72,7 +72,7 @@ export const skills = {
 import procxImg from "../assets/images/procx/procx-preview.png";
 import crystalionImg from "../assets/images/crystalion/crystalion-preview.png";
 import algotipImg from "../assets/images/algotip/algotip-preview.png";
-import qrsmartImg from "../assets/images/qrsmart/qrsmart-preview.png";
+import qrsmartImg from "../assets/images/qrSmart/qrsmart-preview.png";
 import vrdcreativeImg from "../assets/images/vrd/vrd-preview.png";
 
 export const projects = [
