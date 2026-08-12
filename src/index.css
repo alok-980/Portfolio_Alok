@@ -1,1 +1,122 @@
-@import 'tailwindcss'
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+    --bg: #100F0C;
+    --bg-soft: #17150F;
+    --panel: #ECE6D8;
+    --panel-line: rgba(16, 15, 12, 0.10);
+    --ink: #F5F1E7;
+    --ink-dim: #A9A398;
+    --ink-dark: #100F0C;
+    --ink-dark-dim: #565146;
+    --line: rgba(245, 241, 231, 0.14);
+
+    --teal: #57C9C1;
+    --yellow: #F2D64B;
+    --orange: #EE7A24;
+    --pink: #EF2D74;
+    --green: #A6DE55;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+@media (max-width: 860px) {
+    body {
+        cursor: auto;
+    }
+
+    .cursor-dot,
+    .cursor-ring {
+        display: none !important;
+    }
+}
+
+.font-display {
+    font-family: 'Anton', 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.002em;
+}
+
+.font-mono {
+    font-family: 'Space Mono', ui-monospace, monospace;
+}
+
+::selection {
+    background: var(--pink);
+    color: var(--ink);
+}
+
+.cursor-dot,
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+}
+
+.cursor-ring {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #fff;
+}
+
+.hairline-dark {
+    border-color: var(--line);
+}
+
+.hairline-light {
+    border-color: var(--panel-line);
+}
+
+.reveal-mask {
+    overflow: hidden;
+    display: block;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.grid-pattern {
+    background-image:
+        linear-gradient(var(--panel-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--panel-line) 1px, transparent 1px);
+    background-size: 44px 44px;
+}
+
+.grayscale-photo {
+    filter: grayscale(1) contrast(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}

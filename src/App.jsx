@@ -1,9 +1,24 @@
-import React from 'react'
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+import Cursor from "./sheared/ui/components/Cursor";
+import AppRoute from "./routes/AppRoute";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  useEffect(() => {
+    ScrollTrigger.config({ ignoreMobileResize: true });
+    return () => ScrollTrigger.getAll().forEach((t) => t.kill());
+  }, []);
 
-export default App
+  return (
+    <>
+      <Cursor />
+      <AppRoute />
+    </>
+  );
+};
+
+export default App;
