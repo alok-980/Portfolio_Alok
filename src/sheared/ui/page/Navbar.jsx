@@ -64,20 +64,20 @@ const Navbar = () => {
           >
             Resume ↓
           </a>
-          <button data-cursor="grow" onClick={() => setOpen((o) => !o)} className="text-sm font-semibold">
+          <button data-cursor="grow" onClick={() => setOpen((o) => !o)} className="md:hidden text-sm font-semibold cursor-pointer">
             {open ? "Close" : "Menu"}
           </button>
         </div>
       </header>
 
-      <div ref={menuRef} className="fixed inset-0 z-[400] bg-[var(--bg)] hidden flex-col justify-center px-6 md:px-16">
+      <div ref={menuRef} className="fixed inset-0 z-[400] bg-[var(--bg)] hidden flex-col overflow-y-auto px-6 md:px-16 py-24">
         <div className="flex flex-col gap-1">
           {LINKS.map((l, i) => (
             <div key={l.id} className="reveal-mask">
               <button
                 data-cursor="grow"
                 onClick={() => goTo(l.id)}
-                className="menu-link font-display uppercase text-[15vw] md:text-[6.5vw] leading-[1.02] hover:text-[var(--pink)] transition-colors duration-300 text-left"
+                className="menu-link font-display uppercase text-[15vw] md:text-[6.5vw] leading-[1.02] hover:text-[var(--pink)] transition-colors duration-300 text-left cursor-pointer"
               >
                 <span className="font-mono normal-case text-sm align-super mr-4 text-[var(--ink-dim)]">0{i + 1}</span>
                 {l.label}

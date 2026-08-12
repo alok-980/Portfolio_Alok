@@ -1,3 +1,6 @@
+const profilePhoto = "./Gemini_Generated_Image_pwln3spwln3spwln.jpg"
+const resumeUrl = "./ALOK CHAUHAN(1).pdf"
+
 export const profile = {
     name: "Alok Chauhan",
     initials: "AC",
@@ -6,20 +9,18 @@ export const profile = {
     tagline: "I build web applications that tackle real business challenges using the MERN stack.",
     location: "Maharastra, India",
     email: "alokchauhan7896@gmail.com",
-    resumeUrl: "/resume.pdf",
+    resumeUrl: resumeUrl,
     github: "https://github.com/alok-980",
-    linkedin: "https://www.linkedin.com/in/alok-chauhan",
+    linkedin: "https://www.linkedin.com/in/alok-chauhan/",
     twitter: "https://twitter.com/alok",
     availability: "Open to full-time Software Engineer / Full Stack Developer roles",
-    photo:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+    photo: profilePhoto,
     introLeft:
         "I kicked off my career as a Full Stack Developer during an internship at Koncept Software Solutions, working on 10+ production applications across CRM, HRMS, and E-commerce.",
     introRight:
         "I build with MongoDB, Express.js, React.js and Node.js — focused on features that actually help businesses streamline their operations, not just demo projects.",
 };
 
-// Floating sticker badges shown around the hero portrait.
 export const heroBadges = [
     { label: "UI ENGINEERING", sub: "Component & design systems", color: "teal", shape: "circle", top: "6%", left: "6%", rotate: -8 },
     { label: "REACT ARCHITECTURE ✳", color: "yellow", shape: "pill", top: "2%", left: "58%", rotate: 4 },
@@ -31,15 +32,15 @@ export const heroBadges = [
 
 export const about = {
     paragraphs: [
-        "I'm a frontend developer who cares about the 40 milliseconds between a click and a response. I build interfaces that feel considered — fast, legible, and a little bit alive.",
-        "Over the last few years I've shipped products across fintech, e-commerce and creative-tech, working closely with designers to turn static mockups into interactions people remember.",
-        "When I'm not at the keyboard, I'm usually sketching UI ideas, reading about type design, or getting outplayed at chess by a 9-year-old.",
+        "I'm a Full Stack Developer who builds web applications using the MERN stack — MongoDB, Express.js, React.js, and Node.js. I like turning real business problems into working software, not just building demo projects that look good but solve nothing.",
+        "So far I've built 6+ CRM systems, HRMS modules covering Hiring, Attendance, and Payroll, a Driver Rental platform with full booking workflows, and a SaaS QR platform supporting multiple user roles and bulk QR generation. I've also shipped e-commerce features like payment integration and live order tracking, and integrated WebRTC for audio/video calling with wallet management.",
+        "I'm currently looking for Full-Time Software Engineer or Full Stack Developer roles where I can keep solving real problems alongside a strong team — feel free to reach out.",
     ],
     stats: [
-        { value: 3, suffix: "+", label: "Years experience" },
-        { value: 28, suffix: "", label: "Projects shipped" },
-        { value: 12, suffix: "", label: "Happy clients" },
-        { value: 6, suffix: "", label: "Awards & mentions" },
+        { value: 10, suffix: "+", label: "Production apps delivered" },
+        { value: 6, suffix: "+", label: "CRM systems built" },
+        { value: 4, suffix: "", label: "MERN stack expertise" },
+        { value: 100, suffix: "%", label: "Real production work, zero demos" },
     ],
 };
 
@@ -47,143 +48,200 @@ export const skills = {
     categories: [
         {
             name: "Languages",
-            items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Python"],
+            items: ["JavaScript (ES6+)", "Java", "TypeScript", "HTML5", "CSS3"],
         },
         {
             name: "Frameworks & Libraries",
-            items: ["React", "Next.js", "Redux", "Tailwind CSS", "GSAP"],
+            items: ["React", "Redux", "Tailwind CSS", "Bootstrap", "Material UI", "GSAP"],
         },
         {
             name: "Tools & Platforms",
-            items: ["Git / GitHub", "Figma", "Vite", "Webpack", "Docker"],
+            items: ["Git / GitHub", "Postman", "VS Code", "Docker", "Kubernetes"],
         },
         {
             name: "Backend & Data",
-            items: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST / GraphQL"],
+            items: ["Node.js", "Express.js", "MongoDB", "SQL", "REST APIs", "CI/CD"],
         },
     ],
     marquee: [
-        "React", "GSAP", "TypeScript", "Tailwind CSS", "Next.js", "Node.js",
-        "Figma", "MongoDB", "Framer Motion", "Redux", "Vite", "Git",
+        "React", "Redux", "Node.js", "Express.js", "MongoDB", "JavaScript",
+        "TypeScript", "Tailwind CSS", "Bootstrap", "Material UI", "GSAP", "Git",
     ],
 };
+
+import procxImg from "../assets/images/procx/Screenshot 2026-06-07 072243.png";
+import crystalionImg from "../assets/images/crystalion/Screenshot 2026-06-07 074458.png";
+import algotipImg from "../assets/images/algotip/Screenshot 2026-06-07 075358.png";
+import qrsmartImg from "../assets/images/qrsmart/Screenshot 2026-06-07 075457.png";
+import vrdcreativeImg from "../assets/images/vrd/Screenshot 2026-06-07 075858.png";
 
 export const projects = [
     {
         id: "01",
-        title: "Nimbus Finance",
-        category: "Web App · Fintech",
-        year: "2025",
+        slug: "procx",
+        title: "PROCX",
+        subtitle: "E-Commerce Platform",
+        category: "Client Project · E-Commerce",
+        role: "Backend Developer",
+        duration: "3 months",
         description:
-            "A personal-finance dashboard with real-time budgeting, animated data visualisations and a custom design system.",
-        tech: ["React", "TypeScript", "GSAP", "Tailwind"],
-        image:
-            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
-        link: "#",
-        github: "#",
+            "A full-featured wooden packaging e-commerce platform with separate Admin and Supplier panels. Fully dynamic product management, order tracking, and inventory system.",
+        features: [
+            "Dynamic product catalog with categories & filters",
+            "Separate Admin Panel for full platform control",
+            "Supplier Panel for inventory & order management",
+            "Secure JWT authentication & role-based access",
+            "Order tracking and status management",
+            "Responsive design across all devices",
+        ],
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Redux"],
+        image: procxImg,
+        link: "https://procx.pages.dev/packaging-services/shop",
+        github: "https://github.com/alok-980",
     },
     {
         id: "02",
-        title: "Loop Studio",
-        category: "Portfolio · Creative Agency",
-        year: "2024",
+        slug: "crystalion-engineers",
+        title: "Crystalion Engineers",
+        subtitle: "CRM System",
+        category: "Client Project · CRM",
+        role: "Backend Developer",
+        duration: "2 months",
         description:
-            "An award-nominated agency site with scroll-driven storytelling, WebGL accents and a horizontal-scroll case-study gallery.",
-        tech: ["React", "GSAP", "ScrollTrigger", "Three.js"],
-        image:
-            "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1600&auto=format&fit=crop",
-        link: "#",
-        github: "#",
+            "A comprehensive CRM built for an engineering firm to manage clients, projects, follow-ups, and business operations — all in one place.",
+        features: [
+            "Client & lead management with status tracking",
+            "Project pipeline with timeline view",
+            "Follow-up reminders and activity logs",
+            "Employee task assignment and monitoring",
+            "Invoice & quotation generation",
+            "Dashboard with business analytics",
+        ],
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+        image: crystalionImg,
+        link: "https://crystalionengineers.pages.dev/superadmin/dashboard",
+        github: "https://github.com/alok-980",
     },
     {
         id: "03",
-        title: "Marketly",
-        category: "SaaS · Analytics",
-        year: "2024",
+        slug: "algotip",
+        title: "Algotip",
+        subtitle: "Trading Platform with Video/Audio Calls",
+        category: "Client Project · Real-time / Fintech",
+        role: "Backend Developer (Feature Addition)",
+        duration: "1.5 months",
         description:
-            "A multi-tenant analytics platform for D2C brands — dashboards, cohort charts and a self-serve report builder.",
-        tech: ["Next.js", "Node.js", "PostgreSQL", "Redux"],
-        image:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop",
-        link: "#",
-        github: "#",
+            "A trading tips platform where I integrated real-time video/audio calling and a wallet system for premium call access. Built on top of an existing platform.",
+        features: [
+            "Real-time video & audio calling via WebRTC",
+            "Integrated wallet system for call credits",
+            "Pay-per-minute call billing",
+            "Expert-to-user calling flow",
+            "Call history and transaction logs",
+            "Socket.io for real-time communication",
+        ],
+        tech: ["React.js", "Node.js", "WebRTC", "Socket.io", "MongoDB", "Wallet API"],
+        image: algotipImg,
+        link: "https://algotipp.com/",
+        github: "https://github.com/alok-980",
     },
     {
         id: "04",
-        title: "Fieldnote",
-        category: "Mobile-first Web · Productivity",
-        year: "2023",
+        slug: "qr-smart",
+        title: "QR Smart",
+        subtitle: "QR Code Generator",
+        category: "Client Project · SaaS",
+        role: "Backend Developer",
+        duration: "1 month",
         description:
-            "A distraction-free journaling app with offline-first sync, gesture navigation and a hand-tuned typography system.",
-        tech: ["React", "IndexedDB", "Tailwind", "PWA"],
-        image:
-            "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1600&auto=format&fit=crop",
-        link: "#",
-        github: "#",
+            "A feature-rich QR code generation platform supporting URLs, contact cards, WiFi credentials, and more. Users can customize, download, and track QR scans.",
+        features: [
+            "Generate QR for URLs, vCard, WiFi, text & more",
+            "Custom QR with color, logo & style options",
+            "Download in PNG/SVG formats",
+            "Scan analytics & tracking dashboard",
+            "Bulk QR generation support",
+            "User account with QR history",
+        ],
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "QR Libraries"],
+        image: qrsmartImg,
+        link: "https://qrsmart.pages.dev/",
+        github: "https://github.com/alok-980",
     },
     {
         id: "05",
-        title: "Grainscape",
-        category: "Experiment · Generative Art",
-        year: "2023",
+        slug: "vrd-creative",
+        title: "VRD Creative",
+        subtitle: "HR Management CRM",
+        category: "Client Project · HRMS",
+        role: "Backend Developer",
+        duration: "2 months",
         description:
-            "A generative textile-pattern playground — export-ready SVGs driven by simple noise and colour-theory controls.",
-        tech: ["React", "Canvas API", "GSAP"],
-        image:
-            "https://images.unsplash.com/photo-1502691876148-a84978e59af8?q=80&w=1600&auto=format&fit=crop",
-        link: "#",
-        github: "#",
+            "A complete HR management module for a creative agency — handles hiring, employee records, attendance, payroll, and all HR operations in one platform.",
+        features: [
+            "End-to-end employee hiring workflow",
+            "Attendance tracking with daily logs",
+            "Salary management & payroll generation",
+            "Leave management system",
+            "Employee performance records",
+            "HR dashboard with team analytics",
+        ],
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+        image: vrdcreativeImg,
+        link: "https://vrd-crm.pages.dev/superAdmin/dashboard",
+        github: "https://github.com/alok-980",
     },
 ];
 
 export const experience = [
     {
-        role: "Senior Frontend Developer",
-        company: "Nimbus Labs",
-        period: "2024 — Present",
+        role: "Backend Developer",
+        company: "Koncept Software Solutions",
+        period: "2026 — Present",
         location: "Remote",
         points: [
-            "Led the rebuild of the core dashboard, cutting first-paint time by 42%.",
-            "Introduced a shared component library adopted across 4 product teams.",
-            "Mentored two junior engineers through their first production launches.",
+            "Designed secure REST APIs with JWT-based role authentication.",
+            "Architected MongoDB schemas for complex multi-role systems.",
+            "Maintained and optimized existing backend codebases.",
         ],
     },
     {
-        role: "Frontend Developer",
-        company: "Studio Loop",
-        period: "2022 — 2024",
-        location: "Bengaluru, India",
+        role: "Full Stack Developer Intern",
+        company: "Koncept Software Solutions",
+        period: "2025 Sep — 2025 Dec",
+        location: "Remote, India",
         points: [
             "Built motion-driven marketing sites for 15+ clients using GSAP & React.",
             "Partnered directly with designers to translate Figma into pixel-accurate UI.",
-            "Owned performance budgets — average Lighthouse score of 96+.",
+            "Learned industry-standard coding practices and Git workflows",
         ],
     },
     {
         role: "Web Development Intern",
-        company: "Pixel & Co.",
-        period: "2021 — 2022",
-        location: "Lucknow, India",
+        company: "Unified Mentor",
+        period: "2024 Aug — 2022 Nov",
+        location: "Remote, India",
         points: [
-            "Shipped 10+ landing pages and internal tools in a fast-paced agency setting.",
             "Learned the fundamentals of design systems and accessible markup.",
+            "Developed full-stack web applications from scratch",
+            "Received hands-on mentorship on best coding practices",
         ],
     },
 ];
 
 export const education = [
     {
-        degree: "B.Tech, Computer Science & Engineering",
-        school: "ABC Institute of Technology",
-        period: "2019 — 2023",
-        note: "Graduated with distinction · Focus on web systems & HCI",
+        degree: "AI Powered, (Full Stack Development)",
+        school: "Sheryians Coding School",
+        period: "June 2026 — Present",
+        note: "Frontend, Backend, Generative AI, System Design, DSA",
     },
     {
-        degree: "Higher Secondary (PCM)",
-        school: "XYZ Senior Secondary School",
-        period: "2017 — 2019",
-        note: "School topper, Computer Science",
-    },
+        degree: "BCA, Full Stack Development",
+        school: "Manipal University Jaipur",
+        period: "2023 — 2026",
+        note: "Graduated with distinction · Focus on web systems & HCI",
+    }
 ];
 
 export const achievements = [
