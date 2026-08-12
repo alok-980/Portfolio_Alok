@@ -69,11 +69,11 @@ export const skills = {
     ],
 };
 
-import procxImg from "../assets/images/procx/Screenshot 2026-06-07 072243.png";
-import crystalionImg from "../assets/images/crystalion/Screenshot 2026-06-07 074458.png";
-import algotipImg from "../assets/images/algotip/Screenshot 2026-06-07 075358.png";
-import qrsmartImg from "../assets/images/qrsmart/Screenshot 2026-06-07 075457.png";
-import vrdcreativeImg from "../assets/images/vrd/Screenshot 2026-06-07 075858.png";
+import procxImg from "../assets/images/procx/procx-preview.png";
+import crystalionImg from "../assets/images/crystalion/crystalion-preview.png";
+import algotipImg from "../assets/images/algotip/algotip-preview.png";
+import qrsmartImg from "../assets/images/qrsmart/qrsmart-preview.png";
+import vrdcreativeImg from "../assets/images/vrd/vrd-preview.png";
 
 export const projects = [
     {
